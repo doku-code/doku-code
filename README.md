@@ -22,7 +22,7 @@
 
 ---
 
-I build software, game-development tools and the systems that support them.
+I build software, games, development tools and the systems that support them.
 
 My work spans application development, game systems, backend logic and
 self-hosted infrastructure. I like understanding software end-to-end — from
