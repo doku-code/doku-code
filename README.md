@@ -188,9 +188,9 @@ workflows and progressive cleanup of an existing codebase.
 **Self-hosted development infrastructure**
 
 My development platform includes Proxmox, TrueNAS, Docker, Linux services,
-Forgejo, CI runners, reverse proxying, secrets management and backup workflows.
+Forgejo, CI runners, reverse proxying, Infisical-backed secrets management and backup workflows.
 
-`Proxmox` `TrueNAS` `Docker` `Forgejo` `CI/CD`
+`Proxmox` `TrueNAS` `Docker` `Forgejo` `Infisical` `CI/CD`
 
 **Focus:** operating the infrastructure behind my own development workflow.
 
@@ -225,9 +225,9 @@ storage, networking, containerized services and development infrastructure.
         |                        |                        |
     Proxmox                  TrueNAS                 Linux
   virtualization             storage               services
-        |                        |
-       VMs                    ZFS data
-      LXCs                    backups
+        |                        |                        |
+       VMs                    ZFS data               Infisical
+      LXCs                    backups            secrets management
 ```
 
 The environment currently includes:
@@ -241,10 +241,10 @@ The environment currently includes:
 - Cloudflare Tunnel for public services
 - Caddy reverse proxying
 - internal DNS and service discovery
-- centralized secrets management
+- centralized secrets management with Infisical
 - monitoring and backup workflows
 
-`Proxmox` `TrueNAS` `ZFS` `Linux` `Docker` `Forgejo` `CI/CD` `Cloudflare` `Caddy`
+`Proxmox` `TrueNAS` `ZFS` `Linux` `Docker` `Forgejo` `Infisical` `CI/CD` `Cloudflare` `Caddy`
 
 > Hosting the repositories is only one part of the project — maintaining the
 > platform behind them is part of the development workflow too.
@@ -282,5 +282,9 @@ rather than treat as a black box.
 <div align="center">
 
 <sub>build it &nbsp; // &nbsp; understand it &nbsp; // &nbsp; improve it</sub>
+
+<br />
+
+<sub>Profile design inspired in part by <a href="https://github.com/jaenster">jaenster</a>.</sub>
 
 </div>
