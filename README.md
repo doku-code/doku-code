@@ -70,6 +70,7 @@ Developer doku;
 ### Languages
 
 <p>
+  <img src="https://img.shields.io/badge/-Assembly-000?style=flat-squared&logo=assemblyscript" alt="Assembly" />
   <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white" alt="C" />
   <img src="https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" alt="C#" />
