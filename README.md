@@ -22,15 +22,21 @@
 
 ---
 
-I build software, games, development tools and the systems that support them.
+## About Me
 
-My work spans application development, game systems, backend logic and
-self-hosted infrastructure. I like understanding software end-to-end — from
-code and data to deployment, networking, automation and the machines
-underneath it.
+I graduated in video game programming in 2024, learning software development primarily
+through C++. Over time, I went deeper into the language and into lower-level
+concepts such as assembly, CPU intrinsics, performance-oriented programming,
+and how software interacts with the hardware underneath it. It also gave me the
+opportunity to work with C#, different game engines, and graphics programming
+through HLSL shaders.
 
-I also run my own Forgejo instance and development infrastructure as part of
-that stack.
+I joined Studio XP as a game programming instructor, where I now teach children
+how to build games using different engines and programming tools.
+
+I decided to keep pushing further and went back to school to pursue a degree in
+Computer Science. That ended up connecting a lot of the missing pieces for me,
+and now I can't stop thinking about code, systems, and new projects to build.
 
 ```cpp
 struct Developer
@@ -225,24 +231,26 @@ storage, networking, containerized services and development infrastructure.
 ```text
                          Internet
                             |
-                      Cloudflare
+                        Cloudflare
                             |
-                         Tunnel
+                          Tunnel
                             |
-                         Caddy
+                        AdGuard DNS
                             |
-                        Forgejo
-                       /       \
+                          Caddy
+                            |
+                         Forgejo
+                        /       \
                   PostgreSQL    CI
                               Runners
                                  |
         +------------------------+------------------------+
         |                        |                        |
-    Proxmox                  TrueNAS                 Linux
-  virtualization             storage               services
+     Proxmox                  TrueNAS                   Linux
+  virtualization              storage                  services
         |                        |                        |
-       VMs                    ZFS data               Infisical
-      LXCs                    backups            secrets management
+       VMs                    ZFS data                Infisical
+       LXCs                   backups            secrets management
 ```
 
 The environment currently includes:
